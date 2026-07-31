@@ -1,8 +1,24 @@
 aid: omsignal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/omsignal.png
 name: OMsignal
-description: 'OMsignal is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'OMsignal was a Montreal-based biometric smart-apparel startup, backed by Bessemer
+  Venture Partners, that built compression shirts and the OMbra sports bra with embedded textile
+  sensors streaming heart-rate, breathing, and activity data to a companion mobile app. The brand
+  no longer operates independently: the omsignal.com domain now 301-redirects to hexoskin.com
+  (Carre Technologies / Hexoskin), the biometric smart-clothing company that absorbed the product
+  line. As of this enrichment pass OMsignal publishes no independent developer portal, API, or
+  documentation of its own, and omsignal.com itself serves no API artifacts or well-known metadata.'
 url: https://raw.githubusercontent.com/api-evangelist/omsignal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,19 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-note: 'omsignal.com 301-redirects to hexoskin.com; product line absorbed by Hexoskin (Carre Technologies).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Wearables
+- Biometrics
+- Smart Clothing
+- Health
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/omsignal-domain-security.yml
 - type: Website
   url: https://www.omsignal.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
